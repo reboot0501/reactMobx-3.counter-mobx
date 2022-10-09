@@ -10,7 +10,7 @@ class CounterStore {
     @observable
     _count = 5;
 
-    // observable 변수를 추출하는 get 함수는 캐시를 사용할 수 있는 @computed 사용
+    // observable 변수를 추출하는 get 함수는 캐싱를 사용할 수 있는 @computed 사용
     @computed
     get count() {
         return this._count;
